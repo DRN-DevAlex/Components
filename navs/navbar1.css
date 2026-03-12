@@ -1,0 +1,91 @@
+/* 1. Reset y Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex; /* Permite que el contenido esté al lado del sidebar */
+}
+
+/* 2. Estilo del Sidebar */
+.sidebar {
+    width: 250px; /* Ancho fijo */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    background-color: #1a1a2e; /* Azul oscuro elegante */
+    color: white;
+    position: fixed; /* Se queda pegado a la pantalla */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos hacia abajo */
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* 3. Encabezado del Sidebar */
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #303056;
+    padding-bottom: 20px;
+}
+
+.sidebar-header h2 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #00d2ff; /* Color de acento */
+}
+
+/* 4. Menú de navegación */
+.sidebar-menu {
+    list-style: none;
+    flex-grow: 1; /* Hace que esta sección ocupe el espacio disponible */
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #adb5bd;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.sidebar-menu a:hover {
+    background-color: #303056;
+    color: white;
+    padding-left: 25px; /* Pequeño movimiento a la derecha */
+}
+
+/* Clase activa */
+.sidebar-menu a.active {
+    background-color: #00d2ff;
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+/* 5. Footer del Sidebar */
+.sidebar-footer {
+    border-top: 1px solid #303056;
+    padding-top: 20px;
+}
+
+.sidebar-footer a {
+    text-decoration: none;
+    color: #ff4b5c;
+    font-size: 0.9rem;
+}
+
+/* 6. Espaciado para el contenido principal */
+.content {
+    margin-left: 250px; /* Debe ser igual al ancho del sidebar */
+    padding: 40px;
+    width: 100%;
+}
