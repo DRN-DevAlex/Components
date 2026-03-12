@@ -1,0 +1,88 @@
+/* 1. Reset básico (para tu guía: siempre necesario) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Usamos Cascadia Code para un toque moderno, o serif para lujo clásico */
+    font-family: 'Cascadia Code', 'Times New Roman', serif;
+}
+
+/* 2. Contenedor principal del NAV */
+.navbar-premium {
+    background-color: #0a0a0a; /* Negro casi puro */
+    display: flex; /* Activamos Flexbox */
+    justify-content: space-between; /* Distribuye las 3 secciones equitativamente */
+    align-items: center; /* Centrado vertical perfecto */
+    padding: 1rem 5%; /* Espaciado interno */
+    border-bottom: 1px solid #c5a059; /* Línea dorada sutil inferior */
+    box-shadow: 0 4px 20px rgba(197, 160, 89, 0.15); /* Sombra dorada muy suave */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 3. Estilos comunes para las secciones laterales */
+.nav-section {
+    flex: 1; /* Esto obliga a la sección izquierda y derecha a ocupar el mismo ancho */
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    justify-content: flex-end; /* Empuja el botón al borde derecho */
+}
+
+/* 4. Estilos de los enlaces (Izquierda) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Espacio moderno entre elementos */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e0e0e0; /* Gris muy claro, casi blanco, más suave a la vista */
+    font-size: 0.9rem;
+    text-transform: uppercase; /* Letras mayúsculas para más elegancia */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c5a059; /* Cambia a dorado al pasar el mouse */
+}
+
+/* 5. Estilos del Logo (Centro) */
+.nav-logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #c5a059; /* Logo dorado */
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.nav-logo span {
+    color: #e0e0e0; /* El punto final en contraste */
+}
+
+/* 6. Estilos del Botón de Contacto (Derecha) */
+.btn-contacto {
+    text-decoration: none;
+    color: #0a0a0a; /* Texto negro */
+    background-color: #c5a059; /* Fondo dorado */
+    padding: 10px 25px;
+    border-radius: 50px; /* Bordes totalmente redondeados */
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid #c5a059; /* Borde dorado para el efecto hover */
+    transition: all 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: transparent; /* Fondo transparente */
+    color: #c5a059; /* Texto dorado */
+    /* El borde ya es dorado, así que se mantiene */
+}
