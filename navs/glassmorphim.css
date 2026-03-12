@@ -1,0 +1,88 @@
+/* 1. Reset y Fondo de prueba */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #e0e0e0;
+    /* Un gradiente para notar la transparencia del menú */
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    height: 200vh; /* Para poder hacer scroll */
+}
+
+/* 2. El Contenedor Glassmorphism */
+.glass-header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el menú flotante */
+    width: 90%;
+    max-width: 1000px;
+    z-index: 1000;
+}
+
+.glass-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    
+    /* MAGIA DEL GLASSMORPHISM */
+    background: rgba(255, 255, 255, 0.2); /* Color blanco con mucha transparencia */
+    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+    -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+    
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil para simular el borde del cristal */
+    border-radius: 20px; /* Bordes muy redondeados */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); /* Sombra suave */
+}
+
+/* 3. Estilos de contenido */
+.glass-logo {
+    font-weight: 800;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.glass-logo span { color: #ff4b5c; }
+
+.glass-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.glass-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.glass-links a:hover { color: #fff; }
+
+.glass-action button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.glass-action button:hover { background: #000; }
+
+/* Decoración extra para probar el blur */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: -1;
+}
+.circle-1 { width: 300px; height: 300px; background: #a18cd1; top: 50px; left: 10%; }
+.circle-2 { width: 250px; height: 250px; background: #fbc2eb; top: 150px; right: 15%; }
