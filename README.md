@@ -30,8 +30,11 @@ El proyecto está organizado por categorías para facilitar la navegación:
 * **Tech/Futurista:** Estilo "High-Tech" con rejillas 3D, efectos de escaneo y fuentes monoespaciadas.
 
 
-### 3. 📩 Formularios de Contacto
-* *Próximamente:* Formularios modernos con validación visual y diseño limpio.
+### 📩 3. Formularios de Contacto
+* **Básico Moderno:** Diseño limpio en tarjeta con sombras suaves.
+* **Pro de Dos Columnas:** Organización profesional con etiquetas flotantes (*Floating Labels*).
+* **Ultra-Premium Luxury:** Estética oscura ("Eerie Black"), líneas de interacción doradas y micro-animaciones.
+
 
 ### 4. 🃏 Cartas (Cards)
 * *Próximamente:* Grid de tarjetas para productos o servicios con efectos hover.
