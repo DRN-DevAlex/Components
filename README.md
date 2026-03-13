@@ -36,8 +36,10 @@ El proyecto está organizado por categorías para facilitar la navegación:
 * **Ultra-Premium Luxury:** Estética oscura ("Eerie Black"), líneas de interacción doradas y micro-animaciones.
 
 
-### 4. 🃏 Cartas (Cards)
-* *Próximamente:* Grid de tarjetas para productos o servicios con efectos hover.
+### 🃏 4. Tarjetas de Contenido (Cards)
+* **Standard Interactive:** Elevación sutil y uso de `object-fit` para imágenes perfectas.
+* **Pro Grid:** Diseño responsivo con inversión de color (Dark Mode toggle al hover).
+* **Corporate Elegance:** Estética empresarial minimalista, tipografía Serif (*Playfair Display*) y detalles en oro.
 
 ### 5. 🦶 Footers
 * *Próximamente:* Pies de página informativos y minimalistas.
