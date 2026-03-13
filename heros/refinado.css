@@ -76,7 +76,7 @@
         #fbf5b7, 
         #aa771c
     );
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     font-style: italic;
 }
