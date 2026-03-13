@@ -1,0 +1,107 @@
+/* 1. Contenedor Grid Responsivo */
+.services-section {
+    padding: 80px 5%;
+    background-color: #f4f4f4;
+    font-family: 'Inter', sans-serif;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 2. Estilo Pro de la Card */
+.card-pro {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 4px; /* Menos redondeado = Más serio/pro */
+    border: 1px solid #e0e0e0;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. El icono con fondo suave */
+.card-pro-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(197, 160, 89, 0.1); /* Dorado muy suave */
+    color: #c5a059;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+/* 4. Tipografía y Listas */
+.card-pro-content h3 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.card-pro-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card-pro-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.card-pro-list li {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-pro-list li span {
+    color: #c5a059;
+    font-size: 0.8rem;
+}
+
+/* 5. Footer de la Card */
+.card-pro-footer a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+/* 6. Efecto Hover Avanzado */
+.card-pro:hover {
+    background: #1a1a1a; /* Cambio de color radical */
+    border-color: #1a1a1a;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.card-pro:hover .card-pro-content h3,
+.card-pro:hover .card-pro-content p,
+.card-pro:hover .card-pro-list li,
+.card-pro:hover .card-pro-footer a {
+    color: #ffffff; /* El texto se vuelve blanco */
+}
+
+.card-pro:hover .card-pro-icon {
+    background: #c5a059;
+    color: #1a1a1a;
+}
+
+.card-pro:hover .card-pro-footer a {
+    color: #c5a059;
+}
