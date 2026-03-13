@@ -1,0 +1,83 @@
+/* 1. Fondo de la sección */
+.contact-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+/* 2. Caja del formulario */
+.contact-container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.contact-container h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.contact-container p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* 3. Estilo de los grupos de entrada */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* 4. Estilo de los Inputs y Textarea */
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Efecto cuando haces click para escribir */
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #c5a059; /* Usamos tu dorado como acento */
+    box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.1);
+}
+
+/* 5. Botón de envío */
+.btn-send {
+    width: 100%;
+    padding: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-send:hover {
+    background-color: #000;
+}
