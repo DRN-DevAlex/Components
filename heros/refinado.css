@@ -1,0 +1,163 @@
+/* 1. Reset y Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+
+.premium-hero {
+    height: 100vh;
+    background-color: #050505; /* Negro profundo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* 2. Efectos de Iluminación (Spotlights) */
+.light-spot {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.spot-1 {
+    width: 500px;
+    height: 500px;
+    background: #c5a059;
+    top: -100px;
+    right: -100px;
+}
+
+.spot-2 {
+    width: 400px;
+    height: 400px;
+    background: #7a5f2a;
+    bottom: -50px;
+    left: -50px;
+}
+
+/* 3. Contenedor y Contenido */
+.premium-container {
+    width: 90%;
+    max-width: 1100px;
+    z-index: 2;
+    text-align: center;
+}
+
+.premium-tag {
+    display: inline-block;
+    padding: 6px 15px;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    color: #c5a059;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    border-radius: 2px;
+}
+
+.premium-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+/* EFECTO DORADO METÁLICO */
+.gold-text {
+    background: linear-gradient(
+        to right, 
+        #bf953f, 
+        #fcf6ba, 
+        #b38728, 
+        #fbf5b7, 
+        #aa771c
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+}
+
+.premium-description {
+    max-width: 600px;
+    margin: 0 auto 3.5rem;
+    font-size: 1.1rem;
+    color: #999;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+/* 4. Botones */
+.premium-actions {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-gold {
+    background: linear-gradient(135deg, #c5a059 0%, #8e6d2a 100%);
+    color: #000;
+    padding: 18px 45px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-gold:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(197, 160, 89, 0.3);
+}
+
+.btn-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    position: relative;
+    transition: 0.3s;
+}
+
+.btn-link span { color: #c5a059; margin-left: 8px; }
+
+.btn-link:hover { color: #c5a059; }
+
+/* 5. Animación del Indicador de Scroll */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+.mouse {
+    width: 25px;
+    height: 40px;
+    border: 2px solid #c5a059;
+    border-radius: 20px;
+    position: relative;
+}
+
+.mouse::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 8px;
+    background: #c5a059;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8px;
+    border-radius: 2px;
+    animation: scrollMove 2s infinite;
+}
+
+@keyframes scrollMove {
+    0% { opacity: 1; transform: translate(-50%, 0); }
+    100% { opacity: 0; transform: translate(-50%, 15px); }
+}
