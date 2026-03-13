@@ -1,0 +1,152 @@
+/* 1. Reset y Estilo del Escenario */
+.ultra-premium-contact {
+    min-height: 100vh;
+    background: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 60px 20px;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif; /* O Cascadia Code para algo más moderno */
+}
+
+/* 2. Contenedor con Efecto Cristal Oscuro */
+.luxury-form-wrapper {
+    width: 100%;
+    max-width: 850px;
+    background: linear-gradient(145deg, #0d0d0d, #080808);
+    padding: 60px;
+    border-radius: 2px; /* Esquinas rectas para más seriedad */
+    border: 1px solid rgba(197, 160, 89, 0.1);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 5;
+}
+
+/* 3. Encabezado */
+.luxury-tag {
+    color: #c5a059;
+    letter-spacing: 6px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.luxury-title {
+    color: white;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.luxury-title span { font-style: italic; color: #c5a059; }
+
+.luxury-divider {
+    width: 50px;
+    height: 1px;
+    background: #c5a059;
+    margin-bottom: 40px;
+}
+
+/* 4. Inputs de Alta Gama */
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.luxury-input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.full-width { grid-column: span 2; }
+
+.luxury-input-group input, 
+.luxury-input-group textarea,
+.luxury-input-group select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 12px 0;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    border-bottom: 1px solid #222;
+    transition: 0.4s;
+}
+
+/* Estética de Dropdown */
+.luxury-input-group select { color: #888; cursor: pointer; }
+
+/* La línea dorada que se expande al hacer focus */
+.line-gold {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c5a059, transparent);
+    transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.luxury-input-group input:focus ~ .line-gold,
+.luxury-input-group textarea:focus ~ .line-gold {
+    width: 100%;
+}
+
+/* Floating labels premium */
+.luxury-input-group label {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    color: #444;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.luxury-input-group input:focus ~ label,
+.luxury-input-group input:not(:placeholder-shown) ~ label,
+.luxury-input-group textarea:focus ~ label,
+.luxury-input-group textarea:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 0.75rem;
+    color: #c5a059;
+    letter-spacing: 2px;
+}
+
+/* 5. Botón Ultra-Premium */
+.form-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btn-luxury {
+    background: transparent;
+    border: 1px solid #c5a059;
+    padding: 15px 40px;
+    color: #c5a059;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-luxury:hover {
+    color: #000;
+    background: #c5a059;
+    box-shadow: 0 0 30px rgba(197, 160, 89, 0.4);
+}
+
+.btn-icon { font-size: 1.2rem; }
