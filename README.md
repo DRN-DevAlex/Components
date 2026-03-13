@@ -24,8 +24,11 @@ El proyecto está organizado por categorías para facilitar la navegación:
 * **Glassmorphism:** Efecto de desenfoque tipo "cristal" (Blur).
 * **Sidebar:** Navegación vertical fija para aplicaciones.
 
-### 2. 📑 Secciones (Hero & Content)
-* *Próximamente:* Secciones Hero con imágenes optimizadas y tipografías impactantes.
+### ⚡ 2. Secciones Hero (Portadas)
+* **Hero Minimalista:** Limpio, con animaciones de entrada suaves.
+* **Ultra-Premium Black & Gold:** Uso de gradientes metálicos, tipografía *Playfair Display* e iluminación de estudio.
+* **Tech/Futurista:** Estilo "High-Tech" con rejillas 3D, efectos de escaneo y fuentes monoespaciadas.
+
 
 ### 3. 📩 Formularios de Contacto
 * *Próximamente:* Formularios modernos con validación visual y diseño limpio.
