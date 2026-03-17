@@ -1,0 +1,42 @@
+/* CSS Profesional */
+.pro-footer {
+    background-color: #111; /* Negro profundo */
+    color: #eee;
+    padding: 80px 5% 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr; /* Grid desigual */
+    gap: 50px;
+}
+
+.pro-col h4 { font-size: 1.1rem; margin-bottom: 25px; color: #fff; position: relative; }
+.pro-col h4::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 30px; height: 2px; background: #c5a059; }
+
+.logo-gold { font-size: 1.8rem; margin-bottom: 20px; }
+.logo-gold span { color: #c5a059; }
+
+.pro-col p { color: #aaa; line-height: 1.6; font-size: 0.95rem; margin-bottom: 20px; }
+
+.social-icons a { text-decoration: none; color: #c5a059; margin-right: 15px; font-weight: bold; border: 1px solid #333; padding: 8px 12px; border-radius: 4px; transition: 0.3s;}
+.social-icons a:hover { background: #c5a059; color: #111; }
+
+.pro-col ul { list-style: none; padding: 0; }
+.pro-col ul li { margin-bottom: 12px; }
+.pro-col ul li a { text-decoration: none; color: #aaa; transition: 0.3s; }
+.pro-col ul li a:hover { color: #fff; padding-left: 5px; }
+
+/* Formulario Newsletter */
+.newsletter-form { display: flex; gap: 10px; }
+.newsletter-form input { flex: 1; padding: 12px; background: #222; border: 1px solid #333; color: #fff; border-radius: 4px;}
+.newsletter-form button { padding: 12px 20px; background: #c5a059; border: none; color: #111; font-weight: bold; cursor: pointer; border-radius: 4px;}
+.newsletter-form button:hover { background: #fff; }
+
+.pro-bottom { text-align: center; margin-top: 60px; padding-top: 20px; border-top: 1px solid #333; font-size: 0.85rem; color: #666; }
+
+/* Responsive Grid */
+@media (max-width: 900px) { .pro-container { grid-template-columns: 1fr; gap: 40px; } }
