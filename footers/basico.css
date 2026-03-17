@@ -1,0 +1,33 @@
+/* CSS Básico */
+.basic-footer {
+    background-color: #f4f4f4; /* Fondo gris claro suave */
+    color: #333;
+    padding: 60px 5% 20px;
+    font-family: 'Inter', sans-serif;
+    border-top: 1px solid #e0e0e0;
+}
+
+.basic-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.basic-col { flex: 1; min-width: 200px; }
+
+.logo { font-size: 1.5rem; margin-bottom: 15px; }
+.logo span { color: #c5a059; }
+
+.basic-col h4 { font-size: 1rem; margin-bottom: 20px; color: #555; text-transform: uppercase; letter-spacing: 1px;}
+
+.basic-col p { font-size: 0.9rem; color: #666; margin-bottom: 8px; }
+
+.basic-col ul { list-style: none; padding: 0; }
+.basic-col ul li { margin-bottom: 10px; }
+.basic-col ul li a { text-decoration: none; color: #666; font-size: 0.95rem; transition: 0.3s; }
+.basic-col ul li a:hover { color: #c5a059; }
+
+.basic-bottom { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; font-size: 0.8rem; color: #888; }
