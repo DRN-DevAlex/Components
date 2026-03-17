@@ -41,8 +41,10 @@ El proyecto está organizado por categorías para facilitar la navegación:
 * **Pro Grid:** Diseño responsivo con inversión de color (Dark Mode toggle al hover).
 * **Corporate Elegance:** Estética empresarial minimalista, tipografía Serif (*Playfair Display*) y detalles en oro.
 
-### 5. 🦶 Footers
-* *Próximamente:* Pies de página informativos y minimalistas.
+### 👣 5. Pies de Página (Footers)
+* **Básico:** Estructura limpia y funcional para proyectos rápidos.
+* **Pro Dinámico:** Incluye sección de Newsletter y grid de navegación.
+* **Executive Luxury:** Diseño asimétrico de alta gama con detalles en oro.
 
 ---
 
